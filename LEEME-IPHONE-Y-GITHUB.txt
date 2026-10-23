@@ -1,0 +1,22 @@
+CALCO TÁCTICO – SIN COMPUTADORA (desde el iPhone)
+=================================================
+
+Este proyecto, subido a GitHub, hace dos cosas solo:
+  • Publica la versión web en  https://TU-USUARIO.github.io/calco-tactico/
+    -> se instala en iPhone y funciona sin internet.
+  • Compila la APK para Android -> aparece en "Releases" del repositorio.
+
+INSTALAR EN IPHONE (cuando la web esté publicada)
+  1. Abre la dirección en SAFARI (no en Chrome).
+  2. Botón Compartir (cuadro con flecha) > "Agregar a pantalla de inicio".
+  3. Ábrela una vez con internet; desde ahí funciona sin conexión.
+
+DESCARGAR LA APK (para celulares Android)
+  Repositorio > Releases > última versión > CalcoTactico.apk
+
+CADA VEZ QUE ACTUALICES LA APP
+  Reemplaza  www/index.html  en GitHub; en ~5 minutos se publica la nueva
+  versión web y una nueva APK.
+
+Nota: la versión instalada en iPhone es una "app web". Para la App Store
+oficial sigue siendo necesaria una Mac y la cuenta de Apple (99 USD/año).

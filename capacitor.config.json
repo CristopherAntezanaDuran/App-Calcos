@@ -1,0 +1,6 @@
+{
+  "appId": "com.calcotactico.app",
+  "appName": "Calco Táctico",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}

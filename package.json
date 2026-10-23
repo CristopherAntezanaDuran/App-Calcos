@@ -1,0 +1,26 @@
+{
+  "name": "calco-tactico",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calco Táctico – aplicación de graficación de calcos militares",
+  "scripts": {
+    "preparar": "node scripts/preparar.js",
+    "android": "node scripts/preparar.js && node scripts/android.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "jspdf": "2.5.1",
+    "pdfjs-dist": "3.11.174"
+  },
+  "optionalDependencies": {
+    "@fontsource/big-shoulders-stencil-display": "^5.0.0",
+    "@fontsource/ibm-plex-mono": "^5.0.0",
+    "@fontsource/ibm-plex-sans-condensed": "^5.0.0"
+  }
+}

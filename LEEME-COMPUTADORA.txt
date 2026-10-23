@@ -1,0 +1,49 @@
+CALCO TÁCTICO – CÓMO GENERAR LA APK (Android)
+=============================================
+
+REQUISITOS (una sola vez)
+  1. Node.js 20 o superior  (ya lo tienes)
+  2. Android Studio  ->  https://developer.android.com/studio
+     Instálalo con las opciones por defecto y ábrelo una vez para que
+     descargue el "Android SDK". Espera a que termine.
+
+PASOS
+  1. Descomprime esta carpeta, por ejemplo en el Escritorio.
+  2. Abre la carpeta "calco-tactico-app". En la barra de dirección del
+     Explorador escribe  cmd  y presiona Enter (se abre una consola ahí).
+  3. Escribe y presiona Enter (necesita internet, solo esta vez):
+
+        npm install
+
+  4. Luego:
+
+        npm run android
+
+     Esto copia las librerías para que la app funcione SIN internet,
+     crea el proyecto Android y abre Android Studio.
+  5. En Android Studio espera a que termine "Gradle sync" (barra inferior).
+     Después: menú Build > Build App Bundle(s) / APK(s) > Build APK(s).
+  6. Al terminar aparece "locate". La APK está en:
+        android\app\build\outputs\apk\debug\app-debug.apk
+     Pásala al celular (cable, WhatsApp, Drive) e instálala
+     (el celular pedirá permitir "instalar apps desconocidas").
+
+SI CAMBIAS LA APP
+  Reemplaza  www\index.html  por la nueva versión y vuelve a ejecutar:
+        npm run android
+
+PARA GOOGLE PLAY
+  Se necesita una versión firmada (.aab):
+  Build > Generate Signed App Bundle / APK > Android App Bundle.
+  Guarda muy bien el archivo de llave (.jks) y su contraseña: sin ellos
+  no podrás actualizar la app nunca más.
+
+QUÉ SE CAMBIÓ RESPECTO A LA VERSIÓN EN CLAUDE
+  - jsPDF, pdf.js y las fuentes van dentro de la app (funciona offline).
+  - Exportar PNG / PDF / calco .json abre el menú "Compartir" de Android
+    (guardar en Archivos, Drive, WhatsApp, correo…).
+  - En un navegador normal, esos botones descargan el archivo directamente.
+
+Identificador de la app: com.calcotactico.app  (cámbialo en
+capacitor.config.json ANTES del primer "npm run android" si quieres otro,
+p. ej. bo.edu.colmil.calcotactico).
